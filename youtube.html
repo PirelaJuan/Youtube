@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube.com Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-sec">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" />
+        <img class="youtube-logo" src="icons/youtube-logo.svg" />
+      </div>
+
+      <div class="middle-sec">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" />
+          <div class="tooltip">Search</div>
+        </button>
+        <!--Put position absolute inside
+          position relative-->
+        <button class="voice-search-button">
+          <img class="voice-icon" src="icons/voice-search-icon.svg" />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+
+      <div class="right-sec">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg" />
+          <div class="tooltip">Create</div>
+        </div>
+
+        <div class="youtube-app-icon-container">
+          <img class="youtube-app-icon" src="icons/youtube-apps.svg" />
+          <div class="tooltip">YouTube apps</div>
+        </div>
+        <div class="notification-alert">
+          <img class="notification-icon" src="icons/notifications.svg" />
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+
+        <img class="current-user-pic" src="profile_pic/my-channel.jpeg" />
+      </div>
+    </header>
+    <nav class="side-bar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg" alt="" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg" alt="" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg" alt="" />
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg" alt="" />
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnails" src="/thumbnails/thumbnails_2.avif" />
+            <div class="video-time">6:41</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="profile_pic/profile_2.jpg" alt="" />
+            </div>
+
+            <div class="video-info">
+              <p class="video-title">
+                World's Largest Donut (Official World Record)
+              </p>
+              <p class="video-author">Nick DiGiovanni</p>
+              <p class="video-stats">1M views &#183; 8 days agoxd</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnails" src="/thumbnails/thumbnails_3.avif" />
+            <div class="video-time">11:41</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="profile_pic/profile_3.jpg" alt="" />
+            </div>
+
+            <div class="video-info">
+              <p class="video-title">Neighborhood Stereotypes</p>
+              <p class="video-author">Dude Perfect</p>
+              <p class="video-stats">13M views &#183; 3 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnails" src="/thumbnails/mrbeast.jpg" />
+            <div class="video-time">20:00</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img
+                class="profile-pic"
+                src="profile_pic/profile_mrbeast.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="video-info">
+              <p class="video-title">
+                Anything You Can Fit In The Circle I’ll Pay For
+              </p>
+              <p class="video-author">MrBeast</p>
+              <p class="video-stats">258M views &#183; 3 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnails" src="/thumbnails/thumbnails_4.webp" />
+            <div class="video-time">13:54</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="profile_pic/profile_4.jpg" alt="" />
+            </div>
+
+            <div class="video-info">
+              <p class="video-title">
+                Uncle Roger vs Joshua Weissman (Flavor vs Texture)
+              </p>
+              <p class="video-author">mrnigelng</p>
+              <p class="video-stats">948K views &#183; 2 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnails" src="/thumbnails/thumbnails_5.webp" />
+            <div class="video-time">20:39</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="profile_pic/profile_5.jpg" alt="" />
+            </div>
+
+            <div class="video-info">
+              <p class="video-title">
+                Can I Survive Alaskan Winter with No Sleeping Bag, No Tent & No
+                Tarp?
+              </p>
+              <p class="video-author">Outdoor Boys</p>
+              <p class="video-stats">5.7M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnails" src="/thumbnails/thumbnails_6.webp" />
+            <div class="video-time">11:14</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-pic">
+              <img class="profile-pic" src="profile_pic/profile_6.jpg" alt="" />
+            </div>
+
+            <div class="video-info">
+              <p class="video-title">
+                Be gentle with Apples new Titanium iPhone 15 Pro Max ... Yikes!
+              </p>
+              <p class="video-author">JerryRigEverything</p>
+              <p class="video-stats">7.8M views &#183; 3 days ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
